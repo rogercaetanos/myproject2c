@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<HTML>
+   <HEAD>
+   <meta charset="utf-8">
+   <TITLE>Cadastro de Funcionário</TITLE>
+   <link href="/motopecas/Motofast.css" rel="stylesheet" type="text/css">
+   
+   </HEAD>
+   <BODY>
+    <header>
+      <div class="container">
+      <img src="LogoMotofast.png" class="logo">
+   </div>
+    </header>
+    <main>
+      <br>
+     <h2 class="titulo">CADASTRO</h2>
+     <br>
+     <div class="formulario">
+     <form  th:object="${funcionario}">
+   
+      <img src="/motopecas/icones/icons8-pessoa-100.png" class="icons">
+      <input type="text" th:field="*{nome}"  placeholder="Nome e Sobrenome" class="campo"> <br><br>
+
+      <img src="/motopecas/icones/icons8-telefone-100.png" class="icons">
+      <input type="text" th:field="*{telefone}" placeholder="Telefone" class="campo"><br><br>
+
+      <img src="/motopecas/icones/icons8-carta-100.png" class="icons">
+      <input type="email" th:field="*{email}" placeholder="E-mail" class="campo"><br><br>
+
+      <img src="/motopecas/icones/icons8-chave-100.png" class="icons">
+      <input type="password" th:field="*{senha}" placeholder="Crie uma Senha" class="campo"><br><br>
+
+      <img src="/motopecas/icones/icons8-prancheta-100.png" class="icons">
+      <select class="campo">
+         <option>Escolher Setor:</option>
+         <option>Atendente</option>
+         <option>Mecânico</option>
+      </select><br><br>
+
+      <img src="/motopecas/icones/icons8-add-bookmark-100.png" class="icons"></imh>
+      <input type="text" placeholder="CPF" class="campo"><br><br><br>
+
+      <input type="submit" value="CADASTRAR" class="botao"><br><br>
+      <input type="button" value="VOLTAR" class="botao">
+      
+     </form>
+   </div>
+    </main>
+
+    <footer>
+
+    </footer>
+   </BODY>
+
+</HTML>

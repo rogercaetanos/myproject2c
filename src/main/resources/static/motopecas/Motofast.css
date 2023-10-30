@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:RGBA(93, 104, 128, 0.9);
+}
+header{
+    background-color:rgb(151, 0, 0); 
+    width: 100%;
+}
+.container{ 
+    max-width: 1080px;
+}
+.logo{
+    position: relative;left: 523px;
+}
+.titulo{
+    color:#ffffff;
+    font-weight: bold;
+    text-align: center;
+    font-style: normal;
+}
+.formulario{
+    text-align: center;
+}
+.campo{
+    width: 500px;
+    height: 40px;
+}
+.botao{
+    width: 180px;
+    height: 30px;
+    background-color: rgba(13, 17, 48);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.icons{ 
+    width: 30px;
+    position: relative;
+    top: 10px;
+}

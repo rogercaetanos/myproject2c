@@ -1,5 +1,7 @@
 package com.itb.tcc.inf2cm.myproject2c.model;
 
+import java.time.LocalDate;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,13 +16,18 @@ public class Cliente {
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-Incremento
 	private Long id;
 	private String nome;
+	private LocalDate dataNascimento;
 	private String cpf;
+	private String email;
 	private String cep;
 	private String logradouro;
 	private String bairro;
 	private String cidade;
 	private String uf;
 	private String telefone;
+	private boolean codStatusCliente;
+	
+	
 	public Long getId() {
 		return id;
 	}
@@ -75,6 +82,26 @@ public class Cliente {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
+	public boolean getCodStatusCliente() {
+		return codStatusCliente;
+	}
+	public void setCodStatusCliente(boolean codStatusCliente) {
+		this.codStatusCliente = codStatusCliente;
+	}
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
+	}
+	public void setDataNascimento(LocalDate dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	
 	
 
 }
